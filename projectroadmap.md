@@ -2,8 +2,8 @@
 - [x] Create Repository
 - [x] Create ReadMe
 - [x] Create Roadmap
-- [ ] Find related repositories and evaluate code
-- [ ] Install necessary Python libraries
+- [x] Find related repositories and evaluate code
+- [x] Install necessary Python libraries
       
 # Sprint 2 ( April 8 - April 14 )
 - [ ] Build basic Flask App with navigation
