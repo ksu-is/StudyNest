@@ -7,10 +7,10 @@
       
 # Sprint 2 ( April 8 - April 14 )
 - [x] Build basic Flask App with navigation
-- [ ] Create study session timer
+- [x] Create study session timer
 - [x] Implement to-do list
 - [x] Set up SQLite database
-- [ ] Create forms for adding/editing tasks
+- [x] Create forms for adding/editing tasks
 
 # Sprint 3 ( April 15 - April 21 )
 - [ ] Build stats dashboard
