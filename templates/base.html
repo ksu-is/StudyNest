@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <title>StudyNest</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
     <nav>
         <a href="/">Home</a>
         <a href="/todo">To-Do</a>
         <a href="/timer">Timer</a>
-    </nav>
+      </nav>
     <div class="content">
         {% block content %}{% endblock %}
     </div>

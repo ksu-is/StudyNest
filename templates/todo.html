@@ -1,5 +1,33 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>To-Do List (Coming Soon)</h2>
-{% endblock %}
+<h2>To-Do List</h2>
+
+<form method="POST" action="/todo">
+    <input type="text" name="task" placeholder="Enter a task" required>
+    <button type="submit">Add task</button>
+</form>
+
+<ul>
+    {% for task in tasks %}
+      <li>{{ task [1] }}
+     <a href="/delete/{{ task[0] }}" style="color:red; margin-left:10px;">x</a>
+     <a href="/complete/{{ task[0] }}" style="color:green; margin-left:10px;">&#10003;</a>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h2>Completed Tasks</h2>
+
+  <ul>
+    {% for task in completed_tasks %}
+    <li style="text-decoration: line-through;">
+        {{ task[1] }}
+        <a href="/delete/{{ task[0] }}" style="color:red; margin-left:10px;">x</a>
+        <a href="/undo/{{ task[0] }}">
+            <button style="margin-left:10px;">undo</button>
+        </a>
+    </li>
+    {% endfor %}
+  </ul>
+  {% endblock %}

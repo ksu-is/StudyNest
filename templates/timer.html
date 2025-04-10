@@ -1,5 +1,43 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h2>Study Timer (Coming Soon)</h2>
+<h2>Study Timer</h2>
+
+<div id="timer" style="font-size: 48px;">25:00</div>
+
+<button onclick="startTimer()">Start</button>
+<button onclick="resetTimer()">Reset</button>
+
+<script>
+let timer;
+let timeLeft = 1500;  // 25 minutes in seconds
+
+function updateTimer() {
+  let minutes = Math.floor(timeLeft / 60);
+  let seconds = timeLeft % 60;
+  document.getElementById('timer').innerHTML = `${minutes}:${seconds.toString().padStart(2, '0')}`;
+}
+
+function startTimer() {
+  if (!timer) {
+    timer = setInterval(() => {
+      if (timeLeft > 0) {
+        timeLeft--;
+        updateTimer();
+      } else {
+        clearInterval(timer);
+        alert("Time's up!");
+      }
+    }, 1000);
+  }
+}
+
+function resetTimer() {
+  clearInterval(timer);
+  timer = null;
+  timeLeft = 1500;
+  updateTimer();
+}
+</script>
+
 {% endblock %}
