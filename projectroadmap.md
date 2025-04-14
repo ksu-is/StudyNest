@@ -13,10 +13,10 @@
 - [x] Create forms for adding/editing tasks
 
 # Sprint 3 ( April 15 - April 21 )
-- [ ] Build stats dashboard
-- [ ] Visualize data using Matplotlib or Plotly
-- [ ] Link study sessions to tasks
-- [ ] Add streak counter
+- [x] Build stats dashboard
+- [x] Visualize data using Matplotlib or Plotly
+- [x] Link study sessions to tasks
+- [x] Add streak counter
 - [ ] Style the app with custom CSS
 
 # Sprint 4 ( April 22 - April 28 )
