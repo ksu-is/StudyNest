@@ -17,11 +17,9 @@
 - [x] Visualize data using Matplotlib or Plotly
 - [x] Link study sessions to tasks
 - [x] Add streak counter
-- [ ] Style the app with custom CSS
+- [x] Style the app with custom CSS
 
 # Sprint 4 ( April 22 - April 28 )
-- [ ] Add session history view
-- [ ] Create basic user settings/preference
-- [ ] Finalize User Interface and User Experience
-- [ ] Write documentation (README and user guide)
+- [x] Finalize User Interface and User Experience
+- [x] Write documentation (README)
 - [ ] Prepare demo for class presentation
