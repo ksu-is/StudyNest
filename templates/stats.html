@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>StudyNest Stats Dashboard 📊</h2>
+
+<p>Track your progress here!</p>
+
+<ul>
+    <li>Total Tasks Completed: {{ total_completed_tasks }}</li>
+    <li>Total Study Sessions: {{ total_sessions }}</li>
+    <li>Current Streak: {{ streak }} day{{ '' if streak == 1 else 's' }}</li>
+</ul>
+<img src="{{ url_for('static', filename='chart.png') }}" alt="Stats Chart">
+
+{% endblock %}

@@ -1,19 +1,41 @@
 body {
     font-family:Arial, Helvetica, sans-serif;
-    background-color: rgb(253, 253, 253);
+    background-color: rgb(223, 138, 138);
     margin: 0;
     padding: 0;
 }
+header {
+    background-color: aliceblue;
+    padding: 1rem;
+    color: white
+}
 nav {
-    background-color: #f0f0f0;
+    background-color: #f2b1b1;
     padding: 10px;
 }
 nav a {
     text-decoration: underline; 
-    color: rgb(101, 101, 232);
+    color: rgb(248, 248, 248);
     margin-right: 15px;
     font-weight: bold;
 }
+main {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+button {
+    background-color: #6dbf73;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 .content {
     padding: 20px;
 }
